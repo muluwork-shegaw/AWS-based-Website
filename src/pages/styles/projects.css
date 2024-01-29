@@ -1,0 +1,56 @@
+/* Add this at the top to import a Google Font, choose the one you like */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+.projects-logo-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
+}
+
+.projects-logo {
+	display: flex;
+	position: fixed;
+	border: 1px solid white;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	top: 4vh;
+	z-index: 999;
+}
+
+.projectsPageContent {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding-top: 120px;
+}
+
+/* Style for section headers */
+.projectsSectionContainer h2 {
+	text-align: center;
+	font-family: "Open Sans", sans-serif; /* The font family you imported */
+	color: #510747; /* A theme color for the font */
+	margin-bottom: 24px;
+	font-size: 1.5rem; /* Size of the font */
+	font-weight: 700; /* Font weight for h2 elements */
+}
+
+/* Style for sections with shadow */
+.section-container {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	margin-bottom: 24px; /* Space between sections */
+	padding: 20px;
+	background-color: #ffffff; /* White background for sections */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+	.projectsSectionContainer {
+		padding-top: 60px;
+	}
+
+	.projects-project {
+		width: calc(100% / 2);
+	}
+}
