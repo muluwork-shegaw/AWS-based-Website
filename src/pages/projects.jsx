@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Button from "@mui/material/Button";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -8,6 +9,10 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
+
+import Experience from "./experience";
+import Education from "./education";
+import Skills from "./skills";
 
 import "./styles/projects.css";
 
@@ -37,26 +42,28 @@ const Projects = () => {
 							<Logo width={46} />
 						</div>
 					</div>
-					<div className="projects-container">
+					<div className="projectsSectionContainer">
 						<div className="title projects-title">
-							Things I’ve made trying to put my dent in the
-							universe.
+							Things I’ve made
 						</div>
-
 						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
+							{/* subtitle content */}
 						</div>
 
-						<div className="projects-list">
+						<div className="section-container">
+							<h2>Experience</h2>
+							<Experience />
+						</div>
+						<div className="section-container">
+							<h2>Education</h2>
+							<Education />
+						</div>
+						<div className="section-container">
+							<h2>Skills</h2>
+							<Skills />
+						</div>
+						<div className="section-container">
+							<h2>Projects</h2>
 							<AllProjects />
 						</div>
 					</div>

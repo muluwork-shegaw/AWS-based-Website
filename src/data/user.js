@@ -1,34 +1,34 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
+		title: "Muluwork portfolio",
+		name: "Muluwork G.",
+		email: "muluworkgeremew16@gmail.com",
 		logo: "../logo.png",
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		// twitter: "https://twitter.com/",
+		github: "https://github.com/muluwork-shegaw/",
+		linkedin: "https://www.linkedin.com/in/muluwork-geremew-740295197/",
+		// instagram: "https://instagram.com/",
+		// stackoverflow: "https://stackoverflow.com/",
+		// facebook: "https://facebook.com/",
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
+		title: "Muluwork Geremew",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"I am a software Engineer with over 5 years in designing, constructing, and building scalable software systems and dynamic web applications. Proficient in a versatile tech stack including, Java Spring Boot, Next.js, TypeScript, Node.js, and GraphQL Python | Mlops. I excel in crafting robust application architectures and RESTful APIs. My expertise extends to AWS environment management, Docker, and Kubernetes, ensuring seamless deployment and scalability. I have an innate curiosity for learning new technologies and am a good team player.",
 	},
 
 	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
+		title: "Full-stack software engineer",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+			"I'm an experienced Software Engineer with over 5 years of experience in designing and constructing scalable software systems and dynamic web applications. With a robust background in developing high-performance software, I'm confident in contributing to the next-generation foundational capabilities for the digital market. I am eager to apply the knowledge I've gathered and foster innovative solutions in a dynamic and collaborative environment",
 	},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		title: "Explore the convenience of hosting your React portfolio on AWS by leveraging essential services like S3, CloudFront, and more, ensuring a website that is both secure and high-performing",
 		description:
 			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
 	},

@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
 	useEffect(() => {
@@ -60,11 +61,11 @@ const Contact = () => {
 							possible. Finally, if you prefer to connect on
 							social media, you can find me on{" "}
 							<a
-								href={INFO.socials.instagram}
+								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
-								{INFO.socials.instagram}
+								{INFO.socials.linkedin}
 							</a>
 							. I post regular updates and engage with my
 							followers there, so don't hesitate to reach out.
@@ -72,7 +73,9 @@ const Contact = () => {
 							to hearing from you!
 						</div>
 					</div>
-
+					<div>
+						<ContactForm />
+					</div>
 					<div className="socials-container">
 						<div className="contact-socials">
 							<Socials />
