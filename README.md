@@ -1,4 +1,3 @@
-# AWS-based-Website
 # Personal Portfolio Project
 
 ## Overview
