@@ -1,4 +1,3 @@
-// ContactForm.jsx
 import React, { useState } from "react";
 import "./styles/ContactForm.css";
 
@@ -25,13 +24,23 @@ const ContactForm = () => {
 		event.preventDefault();
 
 		// Perform client-side validation
-		if (
-			!formData.messageTitle ||
-			!formData.message ||
-			!formData.email ||
-			!formData.guestName
-		) {
-			setErrorMessage("All fields are required");
+		if (!formData.messageTitle) {
+			setErrorMessage("Message Title is required");
+			return;
+		}
+
+		if (!formData.message) {
+			setErrorMessage("Message is required");
+			return;
+		}
+
+		if (!formData.email || !validateEmail(formData.email)) {
+			setErrorMessage("Please enter a valid email address");
+			return;
+		}
+
+		if (!formData.guestName) {
+			setErrorMessage("Guest Name is required");
 			return;
 		}
 
@@ -39,27 +48,50 @@ const ContactForm = () => {
 		setSuccessMessage("");
 		setErrorMessage("");
 
-		// Assume 'your-lambda-api-endpoint' is the Lambda API endpoint
 		try {
-			const response = await fetch("your-lambda-api-endpoint", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(formData),
-			});
+			const response = await fetch(
+				`https://k127r6dtwg.execute-api.us-east-1.amazonaws.com/prod/contact-form/${formData.email}`,
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						messageTitle: formData.messageTitle,
+						message: formData.message,
+						phone: formData.phone || "000000", // Set default phone value
+						guestName: formData.guestName,
+					}),
+				}
+			);
 
 			const data = await response.json();
 
 			if (response.ok) {
 				setSuccessMessage(data.message);
+				// Clear form fields after successful submission
+				setFormData({
+					messageTitle: "",
+					message: "",
+					email: "",
+					guestName: "",
+					phone: "",
+				});
 			} else {
-				setErrorMessage(data.error);
+				setErrorMessage(
+					data.error || "An error occurred while submitting the form."
+				);
 			}
 		} catch (error) {
 			console.error("Error calling Lambda function:", error);
 			setErrorMessage("An error occurred while submitting the form.");
 		}
+	};
+
+	// Email validation function
+	const validateEmail = (email) => {
+		const re = /\S+@\S+\.\S+/;
+		return re.test(email);
 	};
 
 	return (
