@@ -35,49 +35,50 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "Expresso-Churn-Prediction",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"Expresso is an African telecommunications services company that provides telecommunication services in two African markets: Mauritania and Senegal. Expresso offers a wide range of products and services to meet the needs of customers." +
+				"In this solution, AUC was optimized for early stopping rather than logloss.",
+			logo: "https://miro.medium.com/v2/resize:fit:1358/1*RzxZF0mmXAsMLrIzAWYDSg.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/muluwork-shegaw/Expresso-Churn-Prediction-Challenge-by-AIMS-Ghana",
 		},
 
 		{
-			title: "Project 2",
+			title: "Issue Tracker",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"Crafted a project-focused issue tracking system akin to GitHub using Spring Boot and React JS, powered by Material UI for an intuitive interface. Swagger ensured API documentation, while development benefited from VS Code and IntelliJ IDEA's ultimate versions. Utilized java, spring, react js, Maven",
+			logo: "https://www.megadix.it/img/blog/create-react-app-servlet/banner.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/OKPLY",
 		},
 
 		{
-			title: "Project 3",
+			title: "My personal website",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+			logo: "https://pbs.twimg.com/media/ECe4DEkWsAAAzGa.jpg",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/muluwork-shegaw/AWS-based-Website",
 		},
 
-		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
+		// {
+		// 	title: "Project 4",
+		// 	description:
+		// 		"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+		// 	logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+		// 	linkText: "View Project",
+		// 	link: "https://github.com",
+		// },
 
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
+		// {
+		// 	title: "Project 5",
+		// 	description:
+		// 		"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+		// 	logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+		// 	linkText: "View Project",
+		// 	link: "https://github.com",
+		// },
 	],
 };
 
