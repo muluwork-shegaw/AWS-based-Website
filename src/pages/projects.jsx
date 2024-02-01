@@ -46,9 +46,6 @@ const Projects = () => {
 						<div className="title projects-title">
 							Things I’ve made
 						</div>
-						<div className="subtitle projects-subtitle">
-							{/* subtitle content */}
-						</div>
 
 						<div className="section-container">
 							<h2>Experience</h2>
